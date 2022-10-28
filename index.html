@@ -17,16 +17,34 @@
   background-repeat: no-repeat;
   background-size: cover;
     }
+    @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0036e664, 0 0 40px #0036e664, 0 0 50px #0036e664, 0 0 60px #0036e664, 0 0 70px #0036e664;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #c44dff, 0 0 40px #c44dff, 0 0 50px #c44dff, 0 0 60px #c44dff, 0 0 70px #c44dff, 0 0 80px #c44dff;
+    }
+  }
+  .glow {
+    /*font-size: 80px;*/
+    color: rgba(152, 35, 255, 0.974);
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
 </style>
 
 <body class="fixed-bg">
-    <div style="text-align:center;"><a href="#logo" class="logo"><img src="logo2.png" alt="logo" width="200" height="200"></a></div>
-    <div class="topnav" id="myTopnav" style="padding-left: 8%; padding-right: 8%; ">
+    <div style="text-align:center;"><a href="#logo" class="logo"><img src="D:\techfest\logo2.png" alt="logo" width="200" height="200"></a></div>
+    <div class="topnav glow" id="myTopnav" style="padding-left: 8%; padding-right: 8%; ">
         
-        <a class="active" href="#home">HOME</a>
-        <a href="#news">News</a>
-        <a href="#contact">ABOUT</a>
-        <a href="#about">contacts</a>
+        <!--<a class="active" href="#home">HOME</a>-->
+        <a href="#news">HOME</a>
+        <a href="#contact">Events</a>
+        <a href="#about">clubs</a>
+        <a href="#jad">Contact us</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
@@ -40,7 +58,7 @@
   </div>
     <!--ABOUT-->
     <div class="about">
-        <h1 style="font-size:6vw; text-align: center; color: aliceblue;">ABOUT</h1>
+        <h1 class="glow" style="font-size:6vw; text-align: center; color: aliceblue;">ABOUT</h1>
         <p style="font-size:2vw;text-transform: lowercase; text-align: center; color: aliceblue;padding-left: 10%; padding-right: 10%; padding-bottom: 10%;" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
             of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into 
@@ -49,32 +67,32 @@
     </div>
     <!--speakers-->
     <div class="about">
-        <h1 style="font-size:4vw; text-align: center; color: aliceblue;">SPEAKER</h1>
+        <h1 class="glow" style="font-size:4vw; text-align: center; color: aliceblue;">SPEAKER</h1>
     </div>
-    <div class="row">
+    <div class="row glow1" style="margin-left: 10%;margin-right:10%; ">
         <div class="column">
           <div class="card">
-            <img src="team1.jpg" alt="Jane" style="width:100%">
+            <img src="D:\techfest\team1.jpg" alt="Jane" style="width:100%; border-radius: 50%;" >
             <div class="container1">
-              <h2 style="text-align: center;">Jane Doe</h2>
+              <h2 style="text-align: center;">Director</h2>
             </div>
           </div>
         </div>
       
         <div class="column">
           <div class="card">
-            <img src="team1.jpg" alt="Mike" style="width:100%">
+            <img src="D:\techfest\team1.jpg" alt="Mike" style="width:100%;border-radius: 50%;">
             <div  class="container1">
-              <h2 style="text-align: center;" >Mike Ross</h2>
+              <h2 style="text-align: center;" >Dean SW</h2>
             </div>
           </div>
         </div>
       
         <div class="column">
           <div class="card">
-            <img src="team1.jpg" alt="John" style="width:100%">
+            <img src="D:\techfest\team1.jpg" alt="John" style="width:100%;border-radius: 50%;">
             <div class="container1">
-              <h2 style="text-align: center;">John Doe</h2>
+              <h2 style="text-align: center;">Chief Guest</h2>
             </div>
           </div>
         </div>
@@ -82,22 +100,24 @@
     <!--events-->
     <div>
     <div class="about">
-        <p style="font-size:6vw;text-transform: uppercase; text-align: center; color: aliceblue;padding-left: 10%; padding-right: 10%; padding-top: 10%;" >NOTE THE DATES</p>
+        <p class="glow" style="font-size:6vw;text-transform: uppercase; text-align: center; color: aliceblue;padding-left: 10%; padding-right: 10%; padding-top: 10%;" >NOTE THE DATES</p>
     </div>
-    <div class="timeline">
+    <div class="timeline" style="margin-left: 10%;margin-right:10%">
         <div class="container left">
-          <div class="content">
-            <h2>2017</h2>
-            <p>Lorem ipsum..</p>
+          <div class="content glow1">
+            <h2>05 Nov,2022</h2>
+            <p>Inagural Ceremony</p>
+            <p><a href="5noveventlist.html">view full list</a></p>
           </div>
         </div>
         <div class="container right">
-          <div class="content">
-            <h2>2016</h2>
-            <p>Lorem ipsum..</p>
+          <div class="content glow1">
+            <h2>06 Nov,2022</h2>
+            <p>technical events</p>
+            <p><a href="6noveventlist.html">view full list</a></p>
           </div>
         </div>
-        <div class="container left">
+       <!-- <div class="container left">
             <div class="content">
               <h2>2017</h2>
               <p>Lorem ipsum..</p>
@@ -109,16 +129,16 @@
               <p>Lorem ipsum..</p>
             </div>
           </div>
-      </div>
+      </div>-->
     </div>
     <!--clubs of nita-->
-    <div class="about">
+    <div class="about glow">
         <h1 style="font-size:4vw; text-align: center; color: aliceblue; padding-top: 5%;">CLUBS</h1>
     </div>
-    <div class="row" style="margin-bottom: 5%;">
+    <div class="row glow1" style="margin-bottom: 10%; margin-left: 2.5%; margin-right: 2.5%;">
         <div class="column1">
           <div class="card">
-            <img src="team1.jpg" alt="Jane" style="width:100%">
+            <img src="D:\techfest\team1.jpg" alt="Jane" style="width:100%;border-radius: 10%;">
             <div class="container1">
               <h2 style="text-align: center;">AAVEG</h2>
               <p><button class="button" onclick="window.location.href='aaveg.html';">Know More</button></p>
@@ -128,9 +148,9 @@
       
         <div class="column1">
           <div class="card">
-            <img src="team1.jpg" alt="Mike" style="width:100%">
+            <img src="D:\techfest\team1.jpg" alt="Mike" style="width:100%;border-radius: 10%;">
             <div class="container1">
-              <h2 style="text-align: center;">NLC</h2>
+              <h2 style="text-align: center;"> ANIMA </h2>
               <p><button class="button" onclick="window.location.href='nlc.html';">Know More</button></p>
             </div>
           </div>
@@ -138,7 +158,7 @@
 
         <div class="column1">
             <div class="card">
-              <img src="team1.jpg" alt="Mike" style="width:100%">
+              <img src="D:\techfest\team1.jpg" alt="Mike" style="width:100%;border-radius: 10%;">
               <div class="container1">
                 <h2 style="text-align: center;">FINE ARTS</h2>
                 <p><button class="button" onclick="window.location.href='finearts.html';">Know More</button></p>
@@ -148,7 +168,7 @@
       
         <div class="column1">
           <div class="card">
-            <img src="team1.jpg" alt="John" style="width:100%">
+            <img src="D:\techfest\team1.jpg" alt="John" style="width:100%;border-radius: 10%;">
             <div class="container1">
               <h2 style="text-align: center;">DZIRE</h2>
               <p><button class="button" onclick="window.location.href='dzire.html';">Know More</button></p>
